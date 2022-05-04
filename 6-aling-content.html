@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aling Content</title>
+    <style>
+       .container{
+           border: 1px solid black;
+           display: flex;
+           height: 400px;
+           max-width: 300px;
+           margin: 5px ;
+           flex-wrap: wrap;
+    
+
+       }
+      .item{
+          background-color: darkblue;
+          color: aliceblue;
+          padding: 5px;
+          flex: 1;
+          margin: 5px;
+          text-align: center;
+          border: 1px solid rgb(128, 169, 244);
+         
+      }
+     
+      .center{
+          align-content: center;
+      }
+      .flex-start{
+          align-content: flex-start;
+      }
+      .flex-end{
+          align-content: flex-end;
+      }
+      .space-between{
+          align-content: space-between;
+      }
+      .space-around{
+          align-content: space-around;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container">
+        <div class="item">Alline</div>
+        <div class="item">alline Ferreira</div>
+        <div class="item">Alline Ferreira da</div>
+        <div class="item">Alline Ferreira da Silveira</div>
+        <div class="item">não sei mais o que escrever então é isso </div>
+        <div class="item"> AHHHHHHHHHHHHHHHHHHHH</div>
+        <div class="item">1</div>
+    </div>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Alline</div>
+        <div class="item">alline Ferreira</div>
+        <div class="item">Alline Ferreira da</div>
+        <div class="item">Alline Ferreira da Silveira</div>
+        <div class="item">não sei mais o que escrever então é isso </div>
+        <div class="item"> AHHHHHHHHHHHHHHHHHHHH</div>
+        <div class="item">1</div>
+    </div>
+    <p>Flex Start</p>
+    <div class="container flex-start">
+        <div class="item">Alline</div>
+        <div class="item">alline Ferreira</div>
+        <div class="item">Alline Ferreira da</div>
+        <div class="item">Alline Ferreira da Silveira</div>
+        <div class="item">não sei mais o que escrever então é isso </div>
+        <div class="item"> AHHHHHHHHHHHHHHHHHHHH</div>
+        <div class="item">1</div>
+    </div>
+    <p>Flex End</p>
+    <div class="container flex-end">
+        <div class="item">Alline</div>
+        <div class="item">alline Ferreira</div>
+        <div class="item">Alline Ferreira da</div>
+        <div class="item">Alline Ferreira da Silveira</div>
+        <div class="item">não sei mais o que escrever então é isso </div>
+        <div class="item"> AHHHHHHHHHHHHHHHHHHHH</div>
+        <div class="item">1</div>
+    </div>
+    <p>space between</p>
+    <div class="container space-between">
+        <div class="item">Alline</div>
+        <div class="item">alline Ferreira</div>
+        <div class="item">Alline Ferreira da</div>
+        <div class="item">Alline Ferreira da Silveira</div>
+        <div class="item">não sei mais o que escrever então é isso </div>
+        <div class="item"> AHHHHHHHHHHHHHHHHHHHH</div>
+        <div class="item">1</div>
+    </div>
+    <p>space around</p>
+    <div class="container space-around">
+        <div class="item">Alline</div>
+        <div class="item">alline Ferreira</div>
+        <div class="item">Alline Ferreira da</div>
+        <div class="item">Alline Ferreira da Silveira</div>
+        <div class="item">não sei mais o que escrever então é isso </div>
+        <div class="item"> AHHHHHHHHHHHHHHHHHHHH</div>
+        <div class="item">1</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex flow</title>
+
+    <style>
+   .flex-container{
+       display: flex;
+       border: 1px solid #cacaca;
+       max-width: 500px;
+       max-height: 200px;
+   }
+   .default{
+       flex-flow: row nowrap;
+   }
+   .column-no{
+       flex-flow: column nowrap;
+   }
+   .column-wrap{
+       flex-flow: column wrap;
+   }
+      
+   .row-wrap{
+       flex-flow: row wrap;
+   }
+   .row-reverse{
+       flex-flow: row-reverse wrap;
+       float: right;
+   }
+
+   .item{
+       background-color: brown;
+       margin: 5px;
+       color: aliceblue;
+       text-align: center;
+       width: 100px;
+       height: 50px;
+       line-height: 50px;
+   }
+   .reverse{
+       float: right;
+   }
+    </style>
+</head>
+<body>
+    <h1>Default: row nowrap</h1>
+    <div class="flex-container default">
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>
+       <div class="item">4</div>
+       <div class="item">5</div>
+       <div class="item">6</div>
+       <div class="item">7</div>
+       <div class="item">8</div>
+       <div class="item">9</div>
+    </div>
+    <h1 class="reverse">Default: row-reverse wrap</h1>
+    <div class="flex-container row-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+       <div class="item">7</div>
+       <div class="item">8</div>
+       <div class="item">9</div>
+     </div>
+    <h1>Default: row wrap</h1>
+    <div class="flex-container row-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+       <div class="item">7</div>
+       <div class="item">8</div>
+       <div class="item">9</div>
+     </div>
+     <h1>Default: column wrap</h1>
+     <div class="flex-container column-wrap">
+         <div class="item">1</div>
+         <div class="item">2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+         <div class="item">5</div>
+         <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+      </div>
+
+    <h1>Default: column nowrap</h1>
+    <div class="flex-container column-no">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+       <div class="item">7</div>
+       <div class="item">8</div>
+       <div class="item">9</div>
+     </div>
+    
+</body>
+</html>
