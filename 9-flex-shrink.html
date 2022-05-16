@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .container{
+            border: 1px solid beige;
+            display: flex;
+            max-width: 350px;
+            margin-bottom: 5px;
+        }
+        .item{
+            background-color: cornflowerblue;
+            text-align: center;
+            color: blue;
+            margin: 5px;
+            font-size: 24px;
+        }
+        .s1{
+            flex-shrink: 1;
+        }
+        .fg{
+            flex-grow: 1;
+        }
+        .s0{
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+        .s2{
+            flex-shrink: 2;
+            flex-basis: 200px;
+        }
+        .s3{
+            flex-shrink: 3;
+            flex-basis: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        flex-shrink
+    </p>
+    <div class="container">
+         <div class="item s1 fg">12</div>
+         <div class="item s1 fg">23</div>
+         <div class="item s1 fg">34</div>
+         <div class="item s1 fg">45</div>
+         <div class="item s1 fg">56</div>
+         <div class="item s1 fg">67</div>    
+    </div>
+    <p></p>
+    <div class="container">
+        <div class="item s1 fg">12</div>
+        <div class="item s1 fg">The generated lorem ipsum</div>
+        <div class="item s1 fg">34</div>
+        <div class="item s1 fg">45</div>
+        <div class="item s1 fg">56</div>
+
+   </div>
+   <p>Flex shrink 0 basis em 200px</p>
+   <div class="container">
+    <div class="item s0 fg">12</div>
+    <div class="item s0 fg">The generated lorem ipsum</div>
+    <div class="item s0 fg">34</div>
+    <div class="item s0 fg">45</div>
+    <div class="item s0 fg">56</div>
+   </div>
+
+   <p>Flex shrink 2 basis em 200px</p>
+   <div class="container">
+    <div class="item s2 fg">12</div>
+    <div class="item s2 fg">The generated lorem ipsum</div>
+    <div class="item s2 fg">34</div>
+    <div class="item s2 fg">45</div>
+    <div class="item s2 fg">56</div>
+   </div>
+   <p>Flex shrink 3 basis em 200px</p>
+   <div class="container">
+    <div class="item s3 fg">12</div>
+    <div class="item s3 fg">The generated lorem ipsum</div>
+    <div class="item s3 fg">34</div>
+    <div class="item s3 fg">45</div>
+    <div class="item s3 fg">56</div>
+   </div>
+   <p>Flex shrink mix basis em 200px</p>
+   <div class="container">
+    <div class="item s3 fg">12</div>
+    <div class="item s2 fg">The generated lorem ipsum</div>
+    <div class="item s0
+    fg">34</div>
+    <div class="item s3 fg">45</div>
+    <div class="item s3 fg">56</div>
+   </div>
+
+</body>
+</html>

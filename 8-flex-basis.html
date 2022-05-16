@@ -9,7 +9,7 @@
        .container{
            display: flex;
            border: 1px solid rgb(158, 158, 158);
-           max-width: 300px;
+           max-width: 550px;
            margin-bottom: 5px;
         }
        .item{
@@ -25,6 +25,9 @@
        .fg{
            flex-grow: 1;
        }
+       .fg-0{
+           flex-grow: 0;
+       }
        .fg-2{
            flex-grow: 2;
        }
@@ -36,6 +39,9 @@
        }
        .b-2{
            flex-basis: 2px;
+       }
+       .w100{
+           flex-basis: 100px;
        }
 
     </style>
@@ -75,6 +81,13 @@
         <div class="item bauto fg">02222</div>
         <div class="item b-2 fg">03</div>
         <div class="item b-0 fg">0465</div>
+     </div>
+     <p>Basis + width</p>
+     <div class="container">
+        <div class="item  w100 fg-2">01</div>
+        <div class="item  w100 fg-2">02</div>
+        <div class="item  w100 fg-2">03</div>
+        <div class="item  w100 fg-2">04</div>
      </div>
 
 
